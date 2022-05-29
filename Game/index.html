@@ -1,0 +1,71 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="antonis xristos" content="">
+        <title>Quarto Game</title>
+
+        <link href="../libraries/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link href="../libraries/css/quarto.css" rel="stylesheet">
+        <script src="../libraries/bootstrap/bootstrap.min.js"></script>
+        <script src="../libraries/bootstrap/jquery-3.6.0.js"></script>
+        <script src="../libraries/js/quarto.js"></script>
+    </head>
+    <body>
+        <h1>Quarto</h1>
+
+        <div id="pieces">
+            <p>Select piece for your oponent</p>
+            <select id="pieces_column"> 
+                <option value="BSCF"></option>
+                <option value="BSCH"></option>
+                <option value="BSSF"></option>
+                <option value="BSSH"></option>
+                <option value="BTCF"></option>
+                <option value="BTCH"></option>
+                <option value="BTSF"></option>
+                <option value="BTSH"></option>
+                <option value="WSCF"></option>
+                <option value="WSCH"></option>
+                <option value="WSSF"></option>
+                <option value="WSSH"></option>
+                <option value="WTCF"></option>
+                <option value="WTCH"></option>
+                <option value="WTSF"></option>
+                <option value="WTSH"></option>
+            </select>
+        </div>
+        
+        <div id="quarto_board">
+            
+        </div>
+        
+        <button id="quarto_reset" class="btn btn-primary">Start</button>
+        <br/>
+        <div id='game_initializer'>
+            <input id='username'> 
+
+            <select id='player_id'>
+            <option value='Player1'>Player1</option>
+            <option value='Player2'>Player2</option>
+            </select>
+
+            <button id='quarto_login' class='btn btn-primary'>Log In</button>
+            <br>
+        </div>
+        <div id='game_info'></div>
+
+
+        <div id='move_div'>
+        Δώσε κίνηση (X1 Y1): <input id='the_move'>  <button id='do_move' class='btn btn-primary'>Make move</button><br>
+        <br><br>
+        <button id='do_move2' class='btn btn-primary'>Make move</button><br>
+        </div>
+
+        <br/><br/>
+
+
+<button id='chess_reset' class='btn btn-primary'>RESET</button><br>
+    </body>
+</html>
